@@ -1,0 +1,54 @@
+body {
+    font-family: 'Palatino', 'Georgia', serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    padding: 1em 1.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.mobject {
+    cursor: pointer;
+}
+
+.mobject__title {
+    font-weight: normal;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.subheading {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 9pt;
+    color: #64d7ea;
+}
+
+.play-pause {
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    bottom: 10;
+    right: 10;
+    z-index: 99;
+}
+
+#code {
+    position: absolute;
+    bottom: 0;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: #222;
+}
