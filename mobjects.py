@@ -7,9 +7,9 @@ class Mobjects(Scene):
     '''
     def construct(self):
         # TextMobject
-        text_mobject = TextMobject("TextMobject")
+        text_mobject = TextMobject("hhbb")
         self.play(Write(text_mobject))
-        self.wait()
+        self.wait(90)
         self.play(FadeOut(text_mobject))
         
         # TexMobject
