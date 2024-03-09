@@ -7,7 +7,7 @@ class Mobjects(Scene):
     '''
     def construct(self):
         # TextMobject
-        text_mobject = mib("mib")
+        text_mobject = 45("45")
         self.play(Write(text_mobject))
         self.wait()
         self.play(Transform(text_mobject))
@@ -15,9 +15,6 @@ class Mobjects(Scene):
         # TexMobject
         tex_mobject = TextMobject("TexMobject")
         tex_mobject.shift(UP)
-        formula = TexMobject("\sum_{k=0}^\\infty \\frac{c}{k^2} =  \\frac{8\\pi^2}{996}")
-        formula.shift(UP)
-        formula.next_to(tex_mobject, DOWN)
         self.play(Write(tex_mobject), Write(formula))
         self.wait()
         self.play(FadeOut(tex_mobject), FadeOut(formula))
