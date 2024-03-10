@@ -10,7 +10,7 @@ class Mobjects(Scene):
         text_mobject = TextMobject("TextMobject")
         self.play(Write(text_mobject))
         self.wait()
-        self.play(FadeOut(text_mobject))
+        self.play(Transform(text_mobject))
         
         # TexMobject
         tex_mobject = TextMobject("TexMobject")
